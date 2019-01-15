@@ -1,6 +1,6 @@
-import {
-  createStore
-} from 'redux';
+import { createStore } from 'redux';
+
+// Action geneators - functions that return action objects
 
 const store = createStore((state = {
   count: 0
