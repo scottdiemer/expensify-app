@@ -7,7 +7,7 @@ const addExpense = (
     description = '',
     note = '',
     amount = 0,
-    createAt = 0 
+    createdAt = 0 
   } = {}
 ) => ({
   type: 'ADD_EXPENSE',
@@ -16,7 +16,7 @@ const addExpense = (
     description,
     note,
     amount,
-    createAt
+    createdAt
   }
 });
 
@@ -173,9 +173,9 @@ const expenseTwo = store.dispatch(addExpense({ description: 'Coffee', amount: 30
 // store.dispatch(sortByAmount());
 // store.dispatch(sortByDate());
 
-// store.dispatch(setStartDate(125));
+store.dispatch(setStartDate(0));
 // store.dispatch(setStartDate());
-// store.dispatch(setEndDate(1250));
+store.dispatch(setEndDate(999));
 
 const demoState = {
   expenses: [{
@@ -183,7 +183,7 @@ const demoState = {
     description: 'January Rent',
     note: 'This was the final payment for that address',
     amount: 54500,
-    createAt: 0
+    createdAt: 0
   }],
   filters: {
     text: 'rent',
