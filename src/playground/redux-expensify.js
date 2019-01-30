@@ -1,6 +1,7 @@
 import { createStore, combineReducers } from 'redux';
 import uuid from 'uuid'
 
+
 // ADD_EXPENSE
 const addExpense = (
   { 
@@ -32,7 +33,6 @@ const editExpense = (id, updates) => ({
   id,
   updates
 });
-
 
 // SET_TEXT_FILTER
 const setTextFilter = ( text  = '') => ({
